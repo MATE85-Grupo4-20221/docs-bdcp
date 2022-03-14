@@ -25,5 +25,6 @@
 | `Acesso Local Backend` | localhost:3333 |
 | `Banco de Dados` | MongoDB |
 | `Engine` | NodeJs v16.13.2 and NPM v8.1.2, with React to front-end |
+| `Web Crawler` | Python - Beautifulsoup ?? |
 | `Container` | Docker 20.01 |
 | `Free Server` | Heroku |

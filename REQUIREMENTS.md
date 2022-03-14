@@ -10,7 +10,7 @@
 
 | Requisito | Descrição |
 | --------- | --------- |
-|  `R1 - Cadastro de Usuário` | Usuários (funcionários da secretaria ???) poderão realizar login no sistema para realizar update dos conteúdos programáticos. |
+|  `R1 - Cadastro de Usuário` | Usuários (funcionários da secretaria ???) poderão realizar login no sistema para realizar cadastro dos conteúdos programáticos. |
 |  `R2 - Login de Usuário` | Usuários (funcionários da secretaria ???) poderão realizar login no sistema para realizar update dos conteúdos programáticos. |
 |  `R3 - Create de Conteúdo` |  Conteúdos Programáticos serão primeiramente carregados pelo web crawler, mas poderão ser criados por usuários da secretaria. |
 |  `R4 - Update de Conteúdo` |  Conteúdos Programáticos poderão sofrer update. |

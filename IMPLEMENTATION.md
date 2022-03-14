@@ -8,7 +8,8 @@
 
 - Método
   - Implementação em Kanban (Organização no Trello).
-  - Encontros semanais, mas com disponibilidade de 15 minutos diários para discussão em grupo no whatsapp (só para saber se está tudo correndo bem ou se alguém travou).  
+  - Encontros semanais, mas com disponibilidade de 15 minutos diários para discussão em grupo no whatsapp (só para saber se está tudo correndo bem ou se alguém travou).
+  - Cada desenvolvedor criará uma branch que terá como título a feature designada a ele. Criaremos os tickets de forma que cada um possa pegar o que lhe agradar, tanto a modo de desafio de aprendizado quanto a conforto de desenvolvimento. Essa branch será revisada e testada pelo stakeholder do repositório e ele fará o merge.
 
 - Implementação 
 

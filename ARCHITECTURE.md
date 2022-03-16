@@ -15,6 +15,6 @@
 
 <div align="center">
   <a href="./assets/model.mwb" download>
-      <img src="(https://user-images.githubusercontent.com/62779767/158683143-70c07b70-3606-4724-86fc-9bc0f469b380.png" alt="Modelo de Dados"/>
+      <img src="https://user-images.githubusercontent.com/62779767/158684462-e74c5fa5-686d-4082-8df0-d741d16b4bcc.png" alt="Modelo de Dados"/>
   </a>
 </div>

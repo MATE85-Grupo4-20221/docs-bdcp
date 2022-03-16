@@ -1,10 +1,10 @@
 # Documentação de Requisitos
 
-- Título
-  - Banco de Conteúdos Programáticos (BDCP)
+- Especificação
+  - [PDF](./assets/especification.pdf)
 
-- Escopo do Projeto
-  - O objetivo desta aplicação é centralizar informações importantes a respeito de ementas e conteúdos programáticos de cada disciplina respectiva a cada curso ofertado pela Universidade Federal da Bahia.
+- Protótipo
+  - [Figma](https://www.figma.com/file/4sI0IP4YRbJTMOepIR8XaY/Prot%C3%B3tipo?node-id=0%3A1)
 
 - Requisitos 
 

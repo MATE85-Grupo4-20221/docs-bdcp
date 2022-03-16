@@ -1,10 +1,7 @@
 # Documentação de Arquitetura
 
-- Título
-  - Banco de Conteúdos Programáticos (BDCP).
-
-- Escopo do Projeto
-  - O objetivo desta aplicação é centralizar informações importantes a respeito de ementas e conteúdos programáticos de cada disciplina respectiva a cada curso ofertado pela Universidade Federal da Bahia.
+- Gerência
+  - [Trello](https://trello.com/bancodeconteudosprogramaticos)
 
 - Arquitetura
 
@@ -14,10 +11,10 @@
   </a>
 </div>
 
-- Modelo Relacional
+- Modelo de Dados
 
 <div align="center">
   <a href="./assets/model.mwb" download>
-      <img src="https://user-images.githubusercontent.com/62779767/158682003-37cee090-3b82-468b-97ad-0ce3b3d73a9d.png" alt="Modelo Relacional"/>
+      <img src="(https://user-images.githubusercontent.com/62779767/158683143-70c07b70-3606-4724-86fc-9bc0f469b380.png" alt="Modelo de Dados"/>
   </a>
 </div>

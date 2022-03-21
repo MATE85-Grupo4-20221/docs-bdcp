@@ -27,19 +27,18 @@
 | E01US02 | Editar informações do professor |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero editar as informações de um professor, para atualizar seu e-mail ou inativá-lo na aplicação|
-|*Critérios de aceitação*| _Cenário 01: Editar informações professor_ <br> Dado que o usuário esteja visualizando a lista de professores <br> Quando clicar na opção de editar a informação de um professor <br> Então o sistema exibirá as informações do "Nome Completo" e "E-mail institucional" <br> E permitirá que o mesmo edite as informações descritas. <br> <br> Dado que o usuário esteja editando as informações <br> Quando não preencher uma informação <br> Então o sistema exibirá a mensagem: [Nome do campo] é obrigatório <br> E não concluirá a operação.
-
+|*Critérios de aceitação*| _Cenário 01: Editar informações professor_ <br> Dado que o usuário esteja visualizando a lista de professores <br> Quando clicar na opção de editar a informação de um professor <br> Então o sistema exibirá as informações do "Nome Completo" e "E-mail institucional" <br> E permitirá que o mesmo edite as informações descritas. <br> <br> Dado que o usuário esteja editando as informações <br> Quando não preencher uma informação <br> Então o sistema exibirá a mensagem: [Nome do campo] é obrigatório <br> E não concluirá a operação.<br> <br> Dado que o usuário esteja editando as informações <br> Quando salvar as informações com sucesso <br> Então o sistema concluirá a operação <br> E redirecionará o usuário para a interface de listagem.
 
 
 | E01US03 | Listar professores |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero visualizar as informações dos professores cadastrados, para que eu possa realizar editar suas informações e inativá-lo|
-|*Critérios de aceitação*|
+|*Critérios de aceitação*| Dado que o usuário esteja logado na aplicação <br> Quando desejar visualizar a lista de professores <br> Então o sistema disponibilizará em formato de grade as colunas "Nome", "E-mail" e "Status" de cada usuário <br> E ordenará a listagem pelo nome do usuário <br> E disponibilizará as opções de editar e inativar usuário. 
 
 | E01US04 | Inativar professores |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero inativar o cadastro de outro professor, para que o mesmo não tenha mais acesso ao sistema|
-|*Critérios de aceitação*|
+|*Critérios de aceitação*| _Cenário 01: Inativar/Reativar professor_ <br> Dado que o usuário esteja visualizando os professores <br> Então o sistema disponibilizará que o mesmo inative ou reative um usuário na aplicação. <br><br> _Cenário 02: Bloquear acesso de professor inativo_ <br> Dado que o usuário informe os dados de acesso de login <br> Quando o mesmo estiver bloqueado <br> Então o sistema exibirá a mensagem: "Usuário inativo, procure a administração"<br> E cancelará a operação.
 
 | E02US01 | Realizar login |
 |---------|-----------------|

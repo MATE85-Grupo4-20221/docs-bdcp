@@ -33,7 +33,7 @@
 | *Descrição da história* |  Como um professor previamente cadastrado, quero visualizar as informações dos professores cadastrados, para que eu possa realizar editar suas informações e inativá-lo|
 |*Critérios de aceitação*|
 
-| E01US03 | Listar professores |
+| E01US03 | Inativar professores |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero inativar o cadastro de outro professor, para que o mesmo não tenha mais acesso ao sistema|
 |*Critérios de aceitação*|
@@ -48,20 +48,16 @@
 | *Descrição da história* |  Como um professor previamente cadastrado, quero solicitar meu reset de senha, para que eu possa acessar novamente a aplicação|
 |*Critérios de aceitação*|
 
-| E03US01 | Cadastrar conteúdo programático |
+| E03US01 | Cadastrar disciplinas/conteúdo programático |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor, quero cadastrar conteúdos programáticos das disciplinas, para que ela fique disponível para acesso externo|
 |*Critérios de aceitação*|
 
-| E03US01 | Cadastrar conteúdo programático |
+| E03US01 | Visualizar disciplinas |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor, quero visualizar a lista de disciplinas cadastradas, para que ela fique disponível para acesso externo|
 |*Critérios de aceitação*|
 
-| E03US02 | Visualizar disciplina |
-|---------|-----------------|
-| *Descrição da história* |  Como um visitante ou professor, quero visualizar a lista de disciplinas cadastradas, para que ela fique disponível para acesso externo |
-|*Critérios de aceitação*|
 
 | E03US02 | Visualizar detalhes da disciplina |
 |---------|-----------------|
@@ -89,12 +85,7 @@
 | *Descrição da história* | Como um professor ou um visitante, quero exportar o conteúdo de uma disciplina, para obter suas informações em formato específico padronizado |
 |*Critérios de aceitação*|
 
-| E03US07 | Exportar conteúdo de disciplina |
-|---------|-----------------|
-| *Descrição da história* | Como um professor ou um visitante, quero exportar o conteúdo de uma disciplina, para obter suas informações em formato específico padronizado |
-|*Critérios de aceitação*|
-
-| E03US08 | Criar serviço de importação de disciplinas |
+| E03US07 | Criar serviço de importação de disciplinas |
 |---------|-----------------|
 | *Descrição da história* | Implementação de Crawler para importar dados de disciplinas. |
 |*Critérios de aceitação*|

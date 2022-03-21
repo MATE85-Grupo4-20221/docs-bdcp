@@ -55,39 +55,39 @@
 | *Descrição da história* |  Como um professor, quero cadastrar conteúdos programáticos das disciplinas, para que ela fique disponível para acesso externo|
 |*Critérios de aceitação*|
 
-| E03US01 | Visualizar disciplinas |
+| E03US02 | Visualizar disciplinas |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor, quero visualizar a lista de disciplinas cadastradas, para que ela fique disponível para acesso externo|
 |*Critérios de aceitação*| _Cenário 01: Buscar disciplinas_ <br> Dado que o usuário esteja na interface de listagem de disciplinas <br> Quando digitar alguma informação no campo "Nome ou código da disciplina" <br> Então o sistema buscará em tempo real (autocomplete) as disciplinas que estejam de acordo ao filtro <br> E exibirá na grade de disciplinas. <br><br>_Cenário 02: Listar disciplinas_ <br> Dado que o usuário tenha informado algum dado no campo de busca <br> Quando houverem disciplinas que se encaixam na informação buscada <br> Então o sistema exibirá o código e nome da disciplina <br> E permitirá o clique para visualização dos detalhes da disciplina.
 
 
-| E03US02 | Visualizar detalhes da disciplina |
+| E03US03 | Visualizar detalhes da disciplina |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor ou visitante, quero visualizar a lista de disciplinas cadastradas para que eu possa visualizar seus detalhes|
 |*Critérios de aceitação*| 
 
-| E03US03 | Visualizar histórico de alterações da disciplina |
+| E03US04 | Visualizar histórico de alterações da disciplina |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor ou visitante, quero visualizar as alterações no conteúdo de uma disciplina, para que eu possa acompanhar as mudanças do conteúdo programático|
 |*Critérios de aceitação*|
 
 
-| E03US04 | Atualizar informações  da disciplina |
+| E03US05 | Atualizar informações  da disciplina |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor, quero editar as informações de uma disciplina cadastrada para que seu conteúdo programático esteja de acordo a realidade da disciplina |
 |*Critérios de aceitação*|
 
-| E03US05 | Inativar disciplina |
+| E03US06 | Inativar disciplina |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor, quero inativar uma disciplina para que a mesma não esteja mais disponível para visualização pública |
 |*Critérios de aceitação*|
 
-| E03US06 | Exportar conteúdo de disciplina |
+| E03US07 | Exportar conteúdo de disciplina |
 |---------|-----------------|
 | *Descrição da história* | Como um professor ou um visitante, quero exportar o conteúdo de uma disciplina, para obter suas informações em formato específico padronizado |
 |*Critérios de aceitação*|
 
-| E03US07 | Criar serviço de importação de disciplinas |
+| E03US08 | Criar serviço de importação de disciplinas |
 |---------|-----------------|
 | *Descrição da história* | Implementação de Crawler para importar dados de disciplinas. |
 |*Critérios de aceitação*| Implementar crawler para que as disciplinas estejam disponíveis inicialmente na aplicação.

@@ -21,7 +21,7 @@
 | E01US01 | Cadastro de usuário |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero cadastrar um novo professor no sistema, para que ele possa fazer a gestão das disciplinas |
-|*Critérios de aceitação*| _Cenário 01: Cadastrar professor_ <br> Dado que o usuário esteja visualizando os professores cadastrados<br> Quando clicar no botão cadastrar professor <br>Então o sistema disponibilizará uma interface com os campos: "Nome completo" e "E-mail institucional". <br><br> _Cenário 02: Enviar e-mail de confirmação_ <br>Dado que o usuário esteja cadastrando um usuário <br> Quando a operação for efetuada com sucesso <br> Então o sistema enviará um e-mail com uma senha temporária para o e-mail cadastrado. 
+|*Critérios de aceitação*| _Cenário 01: Cadastrar professor_ <br> Dado que o usuário esteja visualizando os professores cadastrados<br> Quando clicar no botão cadastrar professor <br>Então o sistema disponibilizará uma interface com os campos: "Nome completo" e "E-mail institucional". <br><br> _Cenário 02: Enviar e-mail de confirmação_ <br>Dado que o usuário esteja cadastrando um usuário <br> Quando a operação for efetuada com sucesso <br> Então o sistema enviará um e-mail com um link para definição de senha para o e-mail cadastrado. 
 
 
 | E01US02 | Editar informações do professor |
@@ -43,12 +43,12 @@
 | E02US01 | Realizar login |
 |---------|-----------------|
 | *Descrição da história* |  Como um visitante no sistema, quero realizar o login na aplicação, para que eu possa realizar operações no sistema|
-|*Critérios de aceitação*|
+|*Critérios de aceitação*| _Cenário 01: Realizar login_ <br> Dado que o usuário esteja na interface de login <br> Quando digitar um e-mail e senha válidos <br> Então o sistema redirecionará o usuário para interface de listagem de disciplinas.<br><br> _Cenário 02: Informar erro no login_ <br> Dado que o usuário esteja na interface de login <br> Quando digitar um e-mail e senha inválidos <br> Então o sistema exibirá a mensagem "Usuário ou senha incorretos" <br> E cancelará a operação.
 
 | E02US02 | Redefinir senha |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero solicitar meu reset de senha, para que eu possa acessar novamente a aplicação|
-|*Critérios de aceitação*|
+|*Critérios de aceitação*| _Cenário 01: Esqueci minha senha"_ <br>Dado que o usuário clique na opção esqueci minha senha <br> Quando informar um e-mail previamente cadastrado <br> Então o sistema enviará um e-mail com um link para redefinição de senha. <br> <br> _Cenário 02: Redefinição de senha"_ <br> Dado que o usuário acesse o link do e-mail <br> Quando informar uma senha válida no campo "Senha" e confirmá-la corretamente na opção "Confirmar senha" <br> Então o sistema alterará a senha do usuário na aplicação <br> E efetuará automaticamente seu login <br> E o redirecionará para interface de listagem de disciplinas.
 
 | E03US01 | Cadastrar disciplinas/conteúdo programático |
 |---------|-----------------|
@@ -58,13 +58,13 @@
 | E03US01 | Visualizar disciplinas |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor, quero visualizar a lista de disciplinas cadastradas, para que ela fique disponível para acesso externo|
-|*Critérios de aceitação*|
+|*Critérios de aceitação*| _Cenário 01: Buscar disciplinas_ <br> Dado que o usuário esteja na interface de listagem de disciplinas <br> Quando digitar alguma informação no campo "Nome ou código da disciplina" <br> Então o sistema buscará em tempo real (autocomplete) as disciplinas que estejam de acordo ao filtro <br> E exibirá na grade de disciplinas. <br><br>_Cenário 02: Listar disciplinas_ <br> Dado que o usuário tenha informado algum dado no campo de busca <br> Quando houverem disciplinas que se encaixam na informação buscada <br> Então o sistema exibirá o código e nome da disciplina <br> E permitirá o clique para visualização dos detalhes da disciplina.
 
 
 | E03US02 | Visualizar detalhes da disciplina |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor ou visitante, quero visualizar a lista de disciplinas cadastradas para que eu possa visualizar seus detalhes|
-|*Critérios de aceitação*|
+|*Critérios de aceitação*| 
 
 | E03US03 | Visualizar histórico de alterações da disciplina |
 |---------|-----------------|
@@ -90,4 +90,4 @@
 | E03US07 | Criar serviço de importação de disciplinas |
 |---------|-----------------|
 | *Descrição da história* | Implementação de Crawler para importar dados de disciplinas. |
-|*Critérios de aceitação*|
+|*Critérios de aceitação*| Implementar crawler para que as disciplinas estejam disponíveis inicialmente na aplicação.

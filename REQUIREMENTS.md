@@ -21,19 +21,20 @@
 | E01US01 | Cadastro de usuário |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero cadastrar um novo professor no sistema, para que ele possa fazer a gestão das disciplinas |
-|*Critérios de aceitação*|
+|*Critérios de aceitação*| _Cenário 01: Cadastrar professor_ <br> Dado que o usuário esteja visualizando os professores cadastrados<br> Quando clicar no botão cadastrar professor <br>Então o sistema disponibilizará uma interface com os campos: "Nome completo" e "E-mail institucional". <br><br> _Cenário 02: Enviar e-mail de confirmação_ <br>Dado que o usuário esteja cadastrando um usuário <br> Quando a operação for efetuada com sucesso <br> Então o sistema enviará um e-mail com uma senha temporária para o e-mail cadastrado. 
 
-| E01US02 | Editar informações do professor |
+
+| E01US03 | Editar informações do professor |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero editar as informações de um professor, para atualizar seu e-mail ou inativá-lo na aplicação|
 |*Critérios de aceitação*|
 
-| E01US03 | Listar professores |
+| E01US04 | Listar professores |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero visualizar as informações dos professores cadastrados, para que eu possa realizar editar suas informações e inativá-lo|
 |*Critérios de aceitação*|
 
-| E01US03 | Inativar professores |
+| E01US05 | Inativar professores |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor previamente cadastrado, quero inativar o cadastro de outro professor, para que o mesmo não tenha mais acesso ao sistema|
 |*Critérios de aceitação*|

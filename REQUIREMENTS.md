@@ -58,15 +58,43 @@
 | *Descrição da história* |  Como um professor, quero visualizar a lista de disciplinas cadastradas, para que ela fique disponível para acesso externo|
 |*Critérios de aceitação*|
 
-| E03US01 | Cadastrar conteúdo programático |
+| E03US02 | Visualizar disciplina |
 |---------|-----------------|
-| *Descrição da história* |  Como um professor, quero visualizar a lista de disciplinas cadastradas, para que ela fique disponível para acesso externo|
+| *Descrição da história* |  Como um visitante ou professor, quero visualizar a lista de disciplinas cadastradas, para que ela fique disponível para acesso externo |
+|*Critérios de aceitação*|
+
+| E03US02 | Visualizar detalhes da disciplina |
+|---------|-----------------|
+| *Descrição da história* |  Como um professor ou visitante, quero visualizar a lista de disciplinas cadastradas para que eu possa visualizar seus detalhes|
+|*Critérios de aceitação*|
+
+| E03US03 | Visualizar histórico de alterações da disciplina |
+|---------|-----------------|
+| *Descrição da história* |  Como um professor ou visitante, quero visualizar as alterações no conteúdo de uma disciplina, para que eu possa acompanhar as mudanças do conteúdo programático|
 |*Critérios de aceitação*|
 
 
-|  `R3 - Create de Conteúdo` |  Conteúdos Programáticos serão primeiramente carregados pelo web crawler, mas poderão ser criados por usuários da secretaria. |
-|  `R4 - Update de Conteúdo` |  Conteúdos Programáticos poderão sofrer update. |
-|  `R5 - Listagem de Disciplinas` |  Disciplinas serão listadas. |
-|  `R6 - Busca de Disciplinas` |  Disciplinas poderão ser buscadas diretamente pelo seu código ou nome. Ao acessar a página da disciplina, será possível visualizar informações básicas sobre ela. |
-|  `R7 - Export de Informações` |  Para cada disciplina será possível realizar a exportação de um relatório em PDF, trazendo detalhes mais ricos a respeito de sua ementa e conteúdos programáticos. |
-|  `R8 - Log de Atividades` | Todas as alterações realizadas no sistema em produção ficarão registradas em uma tabela, guardando o ID do usuário, a data, o objeto modificado e o IP de acesso. |
+| E03US04 | Atualizar informações  da disciplina |
+|---------|-----------------|
+| *Descrição da história* |  Como um professor, quero editar as informações de uma disciplina cadastrada para que seu conteúdo programático esteja de acordo a realidade da disciplina |
+|*Critérios de aceitação*|
+
+| E03US05 | Inativar disciplina |
+|---------|-----------------|
+| *Descrição da história* |  Como um professor, quero inativar uma disciplina para que a mesma não esteja mais disponível para visualização pública |
+|*Critérios de aceitação*|
+
+| E03US06 | Exportar conteúdo de disciplina |
+|---------|-----------------|
+| *Descrição da história* | Como um professor ou um visitante, quero exportar o conteúdo de uma disciplina, para obter suas informações em formato específico padronizado |
+|*Critérios de aceitação*|
+
+| E03US07 | Exportar conteúdo de disciplina |
+|---------|-----------------|
+| *Descrição da história* | Como um professor ou um visitante, quero exportar o conteúdo de uma disciplina, para obter suas informações em formato específico padronizado |
+|*Critérios de aceitação*|
+
+| E03US08 | Criar serviço de importação de disciplinas |
+|---------|-----------------|
+| *Descrição da história* | Implementação de Crawler para importar dados de disciplinas. |
+|*Critérios de aceitação*|

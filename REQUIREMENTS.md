@@ -12,48 +12,49 @@
 
 |Num | Épico | Personas envolvidas | Descrição do épico |
 | - | --------- | --------- | --------- |
-|01 | Gerenciamento de usuários |Professor | Permitir que o professor realize o cadastro de novos professores na plataforma, visualize os usuários cadastrados, edite suas informações e realize a inativação do usuário.
-|02 | Realizar login da aplicação | Professor, visitante | Diponibilizar interface de login para permitir que o professor realize o login na aplicação e permitir redefinição de senha.
-|03 | Gerenciar conteúdo | Professor, visitante | Permitir que o professor realize o cadastro das disciplinas e seus respectivos conteúdos programáticos, edite suas informações e realize a inativação de uma disciplina. Permitir a visualização pública das informações das disciplinas cadastradas através do sistema ou importadas via Crawlers e seu conteúdo programático, bem como sua exportação para formato específico.
+|01 | Gerenciamento de usuários |Professor | Permitir que o professor gere convite para que novos professores se cadastrem, visualize os usuários cadastrados e edite suas informações.
+|02 | Realizar login da aplicação | Professor | Disponibilizar interface de login para permitir que o professor realize o login na aplicação e permitir a redefinição de sua senha.
+|03 | Gerenciar conteúdo | Professor, visitante | Permitir que o professor realize o cadastro  disciplinas e seus respectivos conteúdos programáticos, edite e aprove a alteração de suas informações e realize a inativação de uma disciplina. Permitir a visualização pública das informações das disciplinas cadastradas através do sistema ou importadas via Crawler e seu conteúdo programático, bem como sua exportação para formato específico.
 
 ### Histórias de usuário
 
-| E01US01 | Cadastro de usuário |
+| E01US01 | Gerar convite de cadastro para um professor |
 |---------|-----------------|
-| *Descrição da história* |  Como um professor previamente cadastrado, quero cadastrar um novo professor no sistema, para que ele possa fazer a gestão das disciplinas |
-|*Critérios de aceitação*| _Cenário 01: Cadastrar professor_ <br> Dado que o usuário esteja visualizando os professores cadastrados<br> Quando clicar no botão cadastrar professor <br>Então o sistema disponibilizará uma interface com os campos: "Nome completo" e "E-mail institucional". <br><br> _Cenário 02: Enviar e-mail de confirmação_ <br>Dado que o usuário esteja cadastrando um usuário <br> Quando a operação for efetuada com sucesso <br> Então o sistema enviará um e-mail com um link para definição de senha para o e-mail cadastrado. 
+| *Descrição da história* |  Como um professor previamente cadastrado, quero gerar um link de convite, para que um professor possa realizar seu cadastro |
+|*Critérios de aceitação*| _Cenário 01: Gerar link de convite_ <br> Dado que o professor esteja visualizando os professores cadastrados <br> Quando clicar no botão gerar convite <br> Então o sistema exibirá um link com o convite para aplicação <br> E permitirá que o mesmo copie a informação 
 
-
-| E01US02 | Editar informações do professor |
+| E01US02 | Permitir o cadastro usuário a partir de convite |
 |---------|-----------------|
-| *Descrição da história* |  Como um professor previamente cadastrado, quero editar as informações de um professor, para atualizar seu e-mail ou inativá-lo na aplicação|
-|*Critérios de aceitação*| _Cenário 01: Editar informações professor_ <br> Dado que o usuário esteja visualizando a lista de professores <br> Quando clicar na opção de editar a informação de um professor <br> Então o sistema exibirá as informações do "Nome Completo" e "E-mail institucional" <br> E permitirá que o mesmo edite as informações descritas. <br> <br> Dado que o usuário esteja editando as informações <br> Quando não preencher uma informação <br> Então o sistema exibirá a mensagem: [Nome do campo] é obrigatório <br> E não concluirá a operação.<br> <br> Dado que o usuário esteja editando as informações <br> Quando salvar as informações com sucesso <br> Então o sistema concluirá a operação <br> E redirecionará o usuário para a interface de listagem.
+| *Descrição da história* | Como um professor que recebeu um covite de cadastro na plataforma, quero me cadastrar na aplicação, para que eu possa realizar a gestão das informações das disciplinas.
+|*Critérios de aceitação*| Dado que o usuário deseja se cadastrar na aplicação <br> Quando possuir um link válido <br> Então o sistema permitirá que o usuário informe o seu "Nome Completo", "E-mail", "Senha" e que o usuário confirme sua senha na opção "Confirmar senha" <br><br> Dado que o professor esteja se cadastrando com um novo usuário <br> Quando informar um e-mail já cadastrado <br> Então o sistema exibirá a mensagem: "Professor já cadastrado" <br> E cancelará a operação
 
 
-| E01US03 | Listar professores |
+| E01US03 | Editar informações do professor |
 |---------|-----------------|
-| *Descrição da história* |  Como um professor previamente cadastrado, quero visualizar as informações dos professores cadastrados, para que eu possa realizar editar suas informações e inativá-lo|
-|*Critérios de aceitação*| Dado que o usuário esteja logado na aplicação <br> Quando desejar visualizar a lista de professores <br> Então o sistema disponibilizará em formato de grade as colunas "Nome", "E-mail" e "Status" de cada usuário <br> E ordenará a listagem pelo nome do usuário <br> E disponibilizará as opções de editar e inativar usuário. 
+| *Descrição da história* |  Como um professor previamente cadastrado, quero editar as informações de um professor, para atualizar seu nome ou e-mail |
+|*Critérios de aceitação*| _Cenário 01: Editar informações professor_ <br> Dado que o usuário esteja visualizando a lista de professores <br> Quando clicar na opção de editar a informação de um professor <br> Então o sistema exibirá as informações do "Nome Completo" e "E-mail institucional" <br> E permitirá que o mesmo edite as informações descritas. <br> <br> Dado que o usuário esteja editando as informações <br> Quando não preencher uma informação <br> Então o sistema exibirá a mensagem: [Nome do campo] é obrigatório <br> E não concluirá a operação. <br> <br> Dado que o professor esteja editando as informações de um usuário <br> Quando alterar a informação de e-mail <br> E este já pertença a outro usuário cadastrado <br>Então o sistema exibirá a mensagem: "E-mail já cadastrado"<br> E cancelará a operação <br> <br> Dado que o usuário esteja editando as informações <br> Quando salvar as informações com sucesso <br> Então o sistema concluirá a operação <br> E redirecionará o usuário para a interface de listagem.
 
-| E01US04 | Inativar professores |
+
+| E01US04 | Listar professores |
 |---------|-----------------|
-| *Descrição da história* |  Como um professor previamente cadastrado, quero inativar o cadastro de outro professor, para que o mesmo não tenha mais acesso ao sistema|
-|*Critérios de aceitação*| _Cenário 01: Inativar/Reativar professor_ <br> Dado que o usuário esteja visualizando os professores <br> Então o sistema disponibilizará que o mesmo inative ou reative um usuário na aplicação. <br><br> _Cenário 02: Bloquear acesso de professor inativo_ <br> Dado que o usuário informe os dados de acesso de login <br> Quando o mesmo estiver bloqueado <br> Então o sistema exibirá a mensagem: "Usuário inativo, procure a administração"<br> E cancelará a operação.
+| *Descrição da história* |  Como um professor previamente cadastrado, quero visualizar as informações dos professores cadastrados, para que eu possa visualizar suas informações|
+|*Critérios de aceitação*| Dado que o usuário esteja logado na aplicação <br> Quando desejar visualizar a lista de professores <br> Então o sistema disponibilizará em formato de grade as colunas "Nome", "E-mail" e "Status" de cada usuário <br> E ordenará a listagem pelo nome do usuário <br> E disponibilizará as opções de editar. 
+
 
 | E02US01 | Realizar login |
 |---------|-----------------|
-| *Descrição da história* |  Como um visitante no sistema, quero realizar o login na aplicação, para que eu possa realizar operações no sistema|
+| *Descrição da história* |  Como um usuário no sistema, quero realizar o login na aplicação, para que eu possa realizar operações no sistema|
 |*Critérios de aceitação*| _Cenário 01: Realizar login_ <br> Dado que o usuário esteja na interface de login <br> Quando digitar um e-mail e senha válidos <br> Então o sistema redirecionará o usuário para interface de listagem de disciplinas.<br><br> _Cenário 02: Informar erro no login_ <br> Dado que o usuário esteja na interface de login <br> Quando digitar um e-mail e senha inválidos <br> Então o sistema exibirá a mensagem "Usuário ou senha incorretos" <br> E cancelará a operação.
 
 | E02US02 | Redefinir senha |
 |---------|-----------------|
-| *Descrição da história* |  Como um professor previamente cadastrado, quero solicitar meu reset de senha, para que eu possa acessar novamente a aplicação|
-|*Critérios de aceitação*| _Cenário 01: Esqueci minha senha"_ <br>Dado que o usuário clique na opção esqueci minha senha <br> Quando informar um e-mail previamente cadastrado <br> Então o sistema enviará um e-mail com um link para redefinição de senha. <br> <br> _Cenário 02: Redefinição de senha"_ <br> Dado que o usuário acesse o link do e-mail <br> Quando informar uma senha válida no campo "Senha" e confirmá-la corretamente na opção "Confirmar senha" <br> Então o sistema alterará a senha do usuário na aplicação <br> E efetuará automaticamente seu login <br> E o redirecionará para interface de listagem de disciplinas.
+| *Descrição da história* |  Como um professor previamente cadastrado, quero solicitar o reset de minha senha, para que eu possa acessar novamente a aplicação|
+|*Critérios de aceitação*| _Cenário 01: Esqueci minha senha_ <br>Dado que o usuário clique na opção esqueci minha senha <br> Quando informar um e-mail previamente cadastrado <br> Então o sistema enviará um e-mail com um link para redefinição de senha. <br> <br> _Cenário 02: Redefinição de senha"_ <br> Dado que o usuário acesse o link do e-mail <br> Quando informar uma senha válida no campo "Senha" e confirmá-la corretamente na opção "Confirmar senha" <br> Então o sistema alterará a senha do usuário na aplicação <br> E efetuará automaticamente seu login <br> E o redirecionará para interface de listagem de disciplinas.
 
 | E03US01 | Cadastrar disciplinas/conteúdo programático |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor, quero cadastrar conteúdos programáticos das disciplinas, para que ela fique disponível para acesso externo|
-|*Critérios de aceitação*|
+|*Critérios de aceitação*| _Cenário 01 - Cadastro de conteúdo programático_ <br> Dado que o professor esteja visualizando a lista de disciplinas <br> Quando clicar na opção "Cadastrar nova disciplina" <br> Então o sis
 
 | E03US02 | Visualizar disciplinas |
 |---------|-----------------|

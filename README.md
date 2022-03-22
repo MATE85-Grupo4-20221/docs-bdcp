@@ -5,3 +5,4 @@
 - [Requirements Documentation](REQUIREMENTS.md)
 - [Architectural Documentation](ARCHITECTURE.md)
 - [Implementation Documentation](IMPLEMENTATION.md)
+- [Clickup Manager](https://app.clickup.com/31043046/settings/team/31043046/project)

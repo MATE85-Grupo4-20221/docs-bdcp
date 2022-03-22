@@ -1,8 +1,5 @@
 # Documentação de Arquitetura
 
-- Gerência
-  - [Trello](https://trello.com/bancodeconteudosprogramaticos)
-
 - Arquitetura
 
 <div align="center">

@@ -53,8 +53,9 @@
 
 | E03US01 | Cadastrar disciplinas/conteúdo programático |
 |---------|-----------------|
-| *Descrição da história* |  Como um professor, quero cadastrar conteúdos programáticos das disciplinas, para que ela fique disponível para acesso externo|
-|*Critérios de aceitação*| _Cenário 01 - Cadastro de conteúdo programático_ <br> Dado que o professor esteja visualizando a lista de disciplinas <br> Quando clicar na opção "Cadastrar nova disciplina" <br> Então o sis
+| *Descrição da história* |  Como um professor, quero cadastrar conteúdos programáticos das disciplinas, para que ela fique disponível para aprovação e publicação para acesso externo|
+|*Critérios de aceitação*| _Cenário 01 - Cadastro de conteúdo programático_ <br> Dado que o professor esteja visualizando a lista de disciplinas <br> Quando clicar na opção "Cadastrar nova disciplina" <br> Então o sistema deverá disponibilizar, em ordem, que o usuário preencha os campos "Código" e "Nome" da disciplina (obrigatórios) <br> E selecione dentre as Modalidades: "Disciplina","Atividade", "Estágio", "Atividade complementar" ou "Trabalho de conclusão de curso". <br> E selecione Disciplinas para o campo "Pré-requisito", caso necessário <br> E preencha a "Carga horária" da disciplina, distribuindo entre as opções: "Teórica", "Prática" e "Estágio"<br> E preencha o "Módulo" da disciplina <br> E preencha o "Semestre letivo de aplicação" <br> E preencha a "Ementa", "Objetivos", "Conteúdo programático", "Metodologia", "Avaliação da aprendizagem" e "Bibliografia" da disciplina
+
 
 | E03US02 | Visualizar disciplinas |
 |---------|-----------------|

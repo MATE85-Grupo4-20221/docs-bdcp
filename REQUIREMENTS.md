@@ -1,11 +1,5 @@
 # Documentação de Requisitos
 
-## Especificação
-  - [PDF](./assets/especification.pdf)
-
-## Protótipo
-  - [Figma](https://www.figma.com/file/4sI0IP4YRbJTMOepIR8XaY/Prot%C3%B3tipo?node-id=0%3A1)
-
 ## Requisitos:
 
 ### Épicos:

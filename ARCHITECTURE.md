@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://www.figma.com/file/R6EWBTKYPKPhUBhX8DP3G3/Archteture-MATE85?node-id=0%3A1" target="_blank">
-      <img src="https://user-images.githubusercontent.com/62779767/159811093-e4659b8e-0e45-4171-b5f7-ac5c336fa1b1.png" alt="Architecture Picture"/>
+      <img src="https://user-images.githubusercontent.com/29841097/160501511-eefa1228-f682-4d60-adce-04a80b2a4ba4.png" alt="Architecture Picture"/>
   </a>
 </div>
 

@@ -59,8 +59,8 @@
 
 | E03US03 | Visualizar detalhes da disciplina |
 |---------|-----------------|
-| *Descrição da história* |  Como um professor ou visitante, quero visualizar informações importantes sobre a disciplina após aprovação da mesma|
-|*Critérios de aceitação*| _Cenário 01: Visualizar detalhes da disciplina_<br> Dado que o usuário esteja visualizando a lista de disciplinas retornadas pela busca <br> Quando clicar em uma disciplina <br> Então o sistema exibirá os detalhes das disciplinas através dos campos "Departamento", "Carga horária", "Semestre vigente", "Ementa" e "Conteúdo programático".
+| *Descrição da história* |  Como um professor ou visitante, quero visualizar detalhes das disciplinas, para que eu possa obter as informações importantes acerca da mesma |
+|*Critérios de aceitação*| _Cenário 01: Visualizar detalhes da disciplina - Professor_<br> Dado que o professor esteja visualizando a lista de disciplinas retornadas pela busca <br> Quando clicar em uma disciplina <br> E esta possuir informações alteradas ainda não publicadas<br> Então o sistema exibirá as ultimas informações editadas (ainda que não publicadas) da disciplina através dos campos "Departamento", "Carga horária", "Semestre vigente", "Ementa" e "Conteúdo programático"<br> E permitirá que o professor exporte ou edite as informações. <br><br>_Cenário 02: Visualizar detalhes da disciplina - Público_<br> Dado que o visitante esteja visualizando a lista de disciplinas retornadas pela busca <br> Quando clicar em uma disciplina <br> Então o sistema exibirá as ultimas informações publicadas da disciplina através dos campos "Departamento", "Carga horária", "Semestre vigente", "Ementa" e "Conteúdo programático"<br> E permitirá que o visitante exporte as informações.
 
 
 
@@ -73,12 +73,12 @@
 | E03US05 | Atualizar informações  da disciplina |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor, quero editar as informações de uma disciplina cadastrada para que seu conteúdo programático esteja de acordo a realidade da disciplina |
-|*Critérios de aceitação*| Dado que o professor clique na disciplina buscada <br> Então o sistema exibirá a interface de visualização dos dados <br> E permitirá que o usuário edite as informações cadastradas
+|*Critérios de aceitação*| _Cenário 01: Visualizar dados que serão editados_<br> Dado que o professor clique na disciplina buscada <br> Então o sistema exibirá a interface de visualização dos dados <br> E permitirá que o usuário edite as informações cadastradas<br><br> Dado que o professor deseje editar as informações da disciplina <br>Então o sistema exibirá as ultimas alterações salvas (ainda que não publicadas) para o campos descritos nas sessões abaixo.<br> <br> *Geral:* <br> - Código <br> - Nome <br> - Departamento <br> - Semestre Vigente <br> - Modalidade <br><br> *Carga Horária:* <br> - Estudante <br> - Professor <br> - Módulo<br><br> *Pré-requisitos:* <br> - Número do curso <br> - Código do curso  <br> - Botão de adicionar pré-requisito**<br><br>*Ementa:* <br> - Ementa <br><br> *Conteúdo programático:*<br> - Conteúdo programático<br><br> *Metodologia:*<br> - Metodologia<br><br> *Avaliação da aprendizagem:*<br> - Avaliação da aprendizagem<br><br> *Bibliografia:*<br> - Bibliografia<br><br> ** Para o botão de adicionar Pré-requisito, a cada vez que o professor inserir um pré-requisito, uma nova linha abaixo deverá ser adicionada, permitindo sua posterior exclusão. <br><br> ** Cada sessão (Geral, Carga horária, Pré-requisitos, etc.) deverá ser passível de expansão e recolhimento de acordo ao clique do professor.<br><br>_Cenário 02: Editar alterações_<br> Dado que o professor esteja na interface de edição de uma disciplina<br>Quando alterar alguma informação<br>Então o sistema permitirá que o mesmo salve a alteração <br>Ou salve e publique a alteração.
 
 | E03US06 | Aprovar alteração de disciplina |
 |---------|-----------------|
 | *Descrição da história* |  Como um professor, quero aprovar as alterações de uma disciplina, para que ela fique de acordo ao que fora alterado em reunião do colegiado. |
-|*Critérios de aceitação*| Dado que o professor edite as informações de uma disciplina <br> Quando desejar publicar 
+|*Critérios de aceitação*|  _Cenário 01: Aprovar alterações_<br> Dado que o usuário esteja editando as alterações<br>Quando desejar publicá-las<br>Então o sistema exibirá um pop-up com os campos obrigatórios "Data de aprovação" e "Ata de aprovação" e as opções "Salvar" e "Cancelar". 
 
 | E03US07 | Exportar conteúdo de disciplina |
 |---------|-----------------|

@@ -7,7 +7,9 @@
   - Testes Unitários (validar os inputs e o comportamento dos métodos com seus respectivos retornos e tratamentos de erros).   
 - Método
   - Execução manual em ambiente local.
-  - Execução automatizada em gitflow, realizada via script a cada deploy.  
+  - Execução automatizada em gitflow, realizada via script a cada deploy.
+- Justificativa
+  - A quantidade estimada de testes é justificada pelo número de rotas expostas considerando, no mínimo, um teste para o bom compartamento e o mau comportamento desses componentes. 
 
 | Testes Unitários | Módulo de Disciplinas |
 |---------|-----------------|

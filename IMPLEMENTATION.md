@@ -1,23 +1,50 @@
 # Documentação de Implementação
 
-- Metodologia
-  - Implementação em Kanban, organizado no [ClickUp](https://app.clickup.com/31043046/settings/team/31043046/project).
-  - Encontros semanais, mas com disponibilidade de 15 minutos diários para discussão em grupo no whatsapp (só para saber se está tudo correndo bem ou se alguém travou).
-  - Cada desenvolvedor criará uma branch que terá como título a feature designada a ele. Criaremos os tickets de forma que cada um possa pegar o que lhe agradar, tanto a modo de desafio de aprendizado quanto a conforto de desenvolvimento. Essa branch será revisada e testada pelo stakeholder do repositório e ele fará o merge.
-
 - Implementação 
 
-| Requisitos Mínimos | Descrição |
+| Requisitos Mínimos (recomendado para desenvolvimento) | Descrição |
 | --------- | --------- |
-| `Sistema Operacional` | Windows 10 e Linux Ubuntu 20.04 |
+| `Sistema Operacional` | Linux Ubuntu v20.04 |
 | `Memória RAM` | 8gb |
-| `Browser WEB` | Mozilla Firefox e Google Chrome |
+| `Browser WEB` | Google Chrome |
 
-| Tecnologias e Uso | Descrição |
+| Tecnologias | Descrição |
+| --------- | --------- |
+| `Engine` | NodeJs v16.13.2 |
+| `Gerenciador de Pacotes` | NPM v8.1.2 |
+| `Banco de Dados` | Postgresql |
+| `Container` | Docker v20.01 |
+
+| Acessos | Descrição |
 | --------- | --------- |
 | `Acesso Local Frontend` | localhost:3000 |
 | `Acesso Local Backend` | localhost:3333, localhost:3333/api/docs |
-| `Banco de Dados` | MySQL 8.0 |
-| `Engine Backend` | NodeJs v16.13.2 and NPM v8.1.2 |
-| `Container` | Docker 20.01 |
-| `Free Server` | Heroku |
+
+- First Steps
+1. Faça o clone dos repositórios backend e frontend respectivamente abaixo:
+
+```sh
+  $ git clone https://github.com/MATE85-Grupo4-20221/api-bdcp.git
+  $ git clone https://github.com/MATE85-Grupo4-20221/app-bdcp.git
+```
+
+2. Executando a Aplicação Backend:
+ ```sh
+    # Abra o repositório em seu editor preferido
+    $ cd /api-bdcp
+ 
+    # Instale as dependências
+    $ npm install
+    
+    # Faça uma cópia do arquivo **.env.example** e renomeie-o apenas para **.env**
+    # É neste arquivo que estão definidas as variáveis de conexão com o banco. 
+    
+    # Execute o script de criação do banco de dados postgres.
+    # Nesta etapa é imprescindível que tenha instalado o docker em sua máquina. Caso não tenha e opte por fazer a configuração manual do banco, não esqueça de checar as variáveis de configuração no arquivo **.env**
+    $ npm run postgres:create
+    
+    # Finalmente, execute o comando para rodar a aplicação, que ficará disponível em localhost:3333.
+    $ npm run dev
+ ```
+
+3. Executando a Aplicação Frontend:

@@ -36,11 +36,11 @@
     # Instale as dependências
     $ npm install
     
-    # Faça uma cópia do arquivo ***.env.example*** e renomeie-o apenas para ***.env***
+    # Faça uma cópia do arquivo .env.example e renomeie-o apenas para .env
     # É neste arquivo que estão definidas as variáveis de conexão com o banco. 
     
     # Execute o script de criação do banco de dados postgres.
-    # Nesta etapa é imprescindível que tenha instalado o docker em sua máquina. Caso não tenha e opte por fazer a configuração manual do banco, não esqueça de checar as variáveis de configuração no arquivo **.env**
+    # Nesta etapa é imprescindível que tenha instalado o docker em sua máquina. Caso não tenha e opte por fazer a configuração manual do banco, não esqueça de checar as variáveis de configuração no arquivo .env
     $ npm run postgres:create
     
     # Finalmente, execute o comando para rodar a aplicação, que ficará disponível em localhost:3333
@@ -55,10 +55,13 @@
     # Instale as dependências
     $ npm install
     
-    # Faça uma cópia do arquivo **.env.example** e renomeie-o apenas para **.env**
+    # Faça uma cópia do arquivo .env.example e renomeie-o apenas para .env
     # É neste arquivo que estão definidas as variáveis de conexão com a API.
     
     # Finalmente, execute o comando para rodar a aplicação, que ficará disponível em localhost:3000
     $ npm run start
  ```
+ 
+ - Next Steps
+  1. Acesse o endpoint localhost:3333/api/docs para saber como usar todos os endpoints da API e como integrar ao frontend.
 

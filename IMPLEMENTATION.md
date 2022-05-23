@@ -19,6 +19,7 @@
 | --------- | --------- |
 | `Acesso Local Frontend` | localhost:3000 |
 | `Acesso Local Backend` | localhost:3333 |
+| `Documentação Backend` | localhost:3333/api/docs |
 
 ---
 

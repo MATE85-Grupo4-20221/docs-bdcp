@@ -1,6 +1,6 @@
-# Documentação de Implementação
+# Documentação de Implantação
 
-- Implementação 
+- Implantação 
 
 | Requisitos Mínimos (recomendado para desenvolvimento) | Descrição |
 | --------- | --------- |
@@ -74,7 +74,7 @@
  
  ### Next Steps
   - Acesse o endpoint localhost:3333/api/docs para saber como usar todos os endpoints da API e como integrar ao frontend.
-  - Para ter acesso à todo o conteúdo da aplicação você deve criar um usuário (se cadastrar no sistema). Utilize de softwares como, por exemplo, Insomnia ou Postman, acessando diretamente o endpoint de geração de link de cadastro. Mais uma vez, consulte a documentação disponibilizada pelo Swagger através do [link](localhost:3333/api/docs).
+  - Para ter acesso à todo o conteúdo da aplicação você deve criar um usuário (se cadastrar no sistema). Utilize de softwares como, por exemplo, [Insomnia](https://insomnia.rest/download) ou [Postman](https://www.postman.com/), acessando diretamente o endpoint de geração de link de cadastro. Mais uma vez, consulte a documentação disponibilizada pelo Swagger através do [link](localhost:3333/api/docs).
 
 ### Observações
  - Todo o processo de instalação dos softwares, clonagem de repositório e instalação de dependências não deve ultrapassar um tempo médio de 10 minutos. Caso esse tempo seja ultrapassado, algo deu errado e, neste caso, você deve voltar o passo e tentar novamente.

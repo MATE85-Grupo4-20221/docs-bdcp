@@ -28,7 +28,7 @@
 2. Você também precisará ter instalado em sua máquina o [Docker](https://www.docker.com/).
 3. Caso ainda não tenha esses recursos em sua máquina ou tem dúvidas de que foi instalado corretamente, busque pela documentação oficial e depois volte para este material de implementação.
 
-### First Steps
+### Get Started
 1. Faça o clone dos repositórios backend e frontend respectivamente abaixo:
 
 ```sh
@@ -49,7 +49,8 @@
     $ npm install
     
     # Execute o script de criação do banco de dados postgres.
-    # Nesta etapa é imprescindível que tenha instalado o docker em sua máquina. Caso não tenha e opte por fazer a configuração manual do banco, não esqueça de checar as variáveis de configuração no arquivo .env
+    # Nesta etapa é imprescindível que tenha instalado o docker em sua máquina. 
+    # Caso não tenha e opte por fazer a configuração manual do banco, não esqueça de checar as variáveis de configuração no arquivo .env
     $ npm run postgres:create
     
     # Finalmente, execute o comando para rodar a aplicação, que ficará disponível em localhost:3333

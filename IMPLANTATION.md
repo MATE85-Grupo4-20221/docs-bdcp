@@ -92,8 +92,12 @@
 
  
  ### Next Steps
-  - Acesse o endpoint localhost:3333/api/docs para saber como usar todos os endpoints da API e como integrar ao frontend.
-  - Para ter acesso à todo o conteúdo da aplicação você deve criar um usuário (se cadastrar no sistema). Utilize de softwares como, por exemplo, [Insomnia](https://insomnia.rest/download) ou [Postman](https://www.postman.com/), acessando diretamente o endpoint de geração de link de cadastro. Mais uma vez, consulte a documentação disponibilizada pelo Swagger através do [link](localhost:3333/api/docs).
+  1. Para ter acesso à todo o conteúdo da aplicação você deve criar um usuário (se cadastrar no sistema). Utilize de softwares como, por exemplo, [Insomnia](https://insomnia.rest/download) ou [Postman](https://www.postman.com/), acessando diretamente o endpoint de geração de link de cadastro.
+  2. Abra o Insomnia e envie uma requisição do tipo get para http://localhost:3333/api/invite/generate e depois copie o token gerado.
+    2.1. ![insomnia-invite-user](https://user-images.githubusercontent.com/62779767/170702107-d0cb39bf-0c26-4aa6-9af3-5143e518e550.png)
+  3. Abra o navegador e utilize http://localhost:3000/api/invite/validate/token onde, no lugar de 'token' você deverá colar aquele hash gerado no Insomnia.
+  4. Apartir disso você já consegue logar no sistema e utilizar de todas as funcionalidades.
+  5. Acesse o endpoint http://localhost:3333/api/docs para saber como usar todos os endpoints da API e como integrar ao frontend.
 
 ### Observações
  - Todo o processo de instalação dos softwares, clonagem de repositório e instalação de dependências não deve ultrapassar um tempo médio de 10 minutos. Caso esse tempo seja ultrapassado, algo deu errado e, neste caso, você deve voltar o passo e tentar novamente.

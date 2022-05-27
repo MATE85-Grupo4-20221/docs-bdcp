@@ -70,6 +70,9 @@
     # Abra o repositório em seu editor preferido
     $ cd /app-bdcp
     
+    # Mude para a branch de desenvolvimento
+    $ git checkout develop
+    
     # Faça uma cópia do arquivo .env.example e renomeie-o apenas para .env
     # É neste arquivo que estão definidas as variáveis de conexão com a API.
     $ cp .env.example .env
@@ -83,6 +86,10 @@
     # Finalmente, execute o comando para rodar a aplicação, que ficará disponível em localhost:3000
     $ npm run start
  ```
+   - Se tudo der certo, esta deve ser a visão do seu cmd.
+   - ![cmd-app](https://user-images.githubusercontent.com/62779767/170700192-326fb6e3-4851-4f27-8da4-462560cf333e.png)
+
+
  
  ### Next Steps
   - Acesse o endpoint localhost:3333/api/docs para saber como usar todos os endpoints da API e como integrar ao frontend.

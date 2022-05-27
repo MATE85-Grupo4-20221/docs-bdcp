@@ -41,12 +41,18 @@
     # Abra o repositório em seu editor preferido
     $ cd /api-bdcp
     
+    # Mude para a branch de desenvolvimento
+    $ git checkout dev
+    
     # Faça uma cópia do arquivo .env.example e renomeie-o apenas para .env
     # É neste arquivo que estão definidas as variáveis de conexão com o banco. 
     $ cp .env.example .env
  
     # Instale as dependências
     $ npm install
+    
+    # Execute o comando abaixo apenas para garantir que está tudo certo com o eslint.
+    $ npm run lint:fix
     
     # Execute o script de criação do banco de dados postgres.
     # Nesta etapa é imprescindível que tenha instalado o docker em sua máquina. 
@@ -56,6 +62,8 @@
     # Finalmente, execute o comando para rodar a aplicação, que ficará disponível em localhost:3333
     $ npm run dev
  ```
+  - Se tudo der certo, esta deve ser a visão do seu cmd.
+  - ![cmd-api](https://user-images.githubusercontent.com/62779767/170699050-988336f6-f206-4a37-b74a-e9fceb02a998.png)
 
 3. Executando a Aplicação Frontend:
  ```sh
@@ -69,6 +77,9 @@
     # Instale as dependências
     $ npm install
     
+    # Execute o comando abaixo apenas para garantir que está tudo certo com o eslint.
+    $ npm run lint:fix
+    
     # Finalmente, execute o comando para rodar a aplicação, que ficará disponível em localhost:3000
     $ npm run start
  ```
@@ -80,4 +91,6 @@
 ### Observações
  - Todo o processo de instalação dos softwares, clonagem de repositório e instalação de dependências não deve ultrapassar um tempo médio de 10 minutos. Caso esse tempo seja ultrapassado, algo deu errado e, neste caso, você deve voltar o passo e tentar novamente.
  - Em caso de dúvida, consulte um dos desenvolvedores através do email do projeto 'bdcpicufba@gmail.com'.
+
+---
 

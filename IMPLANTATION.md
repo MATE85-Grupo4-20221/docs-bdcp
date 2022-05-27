@@ -96,7 +96,7 @@
   2. Abra o Insomnia e envie uma requisição do tipo get para http://localhost:3333/api/invite/generate e depois copie o token gerado.
   - ![insomnia-invite-user](https://user-images.githubusercontent.com/62779767/170702107-d0cb39bf-0c26-4aa6-9af3-5143e518e550.png)
   3. Abra o navegador e utilize http://localhost:3000/api/invite/validate/token onde, no lugar de 'token' você deverá colar aquele hash gerado no Insomnia.
-  4. Apartir disso você já consegue logar no sistema e utilizar de todas as funcionalidades.
+  4. A partir disso você já consegue logar no sistema e utilizar de todas as funcionalidades.
   5. Acesse o endpoint http://localhost:3333/api/docs para saber como usar todos os endpoints da API e como integrar ao frontend.
 
 ### Observações
